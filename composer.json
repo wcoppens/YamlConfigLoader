@@ -1,5 +1,5 @@
 {
-  "name": "wcoppens/phalcon/config-loader",
+  "name": "wcoppens/phalcon-config-loader",
   "type": "library",
   "description": "A symfony2 inspired Yaml config loader for Phalcon framework ",
   "keywords": ["framework", "phalcon"],
