@@ -1,0 +1,27 @@
+{
+  "name": "wcoppens/phalcon/config-loader",
+  "type": "library",
+  "description": "A symfony2 inspired Yaml config loader for Phalcon framework ",
+  "keywords": ["framework", "phalcon"],
+  "homepage": "https://github.com/wcoppens/YamlConfigLoader",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Wesley Coppens",
+      "email": "wesley@enelogic.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "ext-phalcon": ">=1.2.4",
+    "phalcon/incubator": ">=1.3.4"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-0": {
+      "Wcoppens\\Phalcon\\ConfigLoader\\": "src/"
+    }
+  }
+
+}
