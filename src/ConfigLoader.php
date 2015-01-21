@@ -1,6 +1,6 @@
 <?php
 
-namespace Wcoppens;
+namespace Wcoppens\Phalcon\ConfigLoader;
 
 use Phalcon\Config\Adapter\ExtendedYaml;
 use Phalcon\Config\Exception;
