@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-0": {
-      "Wcoppens\\Phalcon\\ConfigLoader": "src/"
+      "Wcoppens\\Phalcon\\ConfigLoader\\": "src/"
     }
   }
 
