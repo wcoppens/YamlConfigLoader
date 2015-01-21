@@ -17,8 +17,8 @@
     "phalcon/incubator": ">=1.3.4"
   },
   "autoload": {
-    "psr-4": {
-      "Wcoppens\\Phalcon\\ConfigLoader\\": "src/"
+    "psr-0": {
+      "Wcoppens\\Phalcon\\ConfigLoader": "src/"
     }
   }
 
