@@ -36,6 +36,9 @@ database:
     port: !parameter database_port
     schema: !parameter database_schema
 
+application:
+    controllersDir: !approot app/controllers/
+
 ```
 
 ```yml
