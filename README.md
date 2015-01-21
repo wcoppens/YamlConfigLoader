@@ -48,7 +48,7 @@ parameters:
     database_host: somehost.net
     database_username: demo
     database_password: your-db-password
-    database_ name: demo
+    database_name: demo
     database_port: 5432
     database_schema: public
 ```
@@ -65,5 +65,14 @@ Now you can load your config files by creating a new ConfigLoader instance for e
 ```php
 
 $config = new Wcoppens\Phalcon\ConfigLoader('Your config dir path', 'Your app-root path', 'environment');
+
+/*
+ * Now you can access all config variables just as with the original config system provided by Phalcon.
+ *
+ * Here some examples on how to access the variables.
+ */
+ 
+ echo $config->application->controllersDir;
+ echo $config->parameters->database_name
 
 ```
