@@ -2,16 +2,15 @@
 
 namespace Wcoppens\Phalcon\ConfigLoader;
 
-use Phalcon\Config\Adapter\ExtendedYaml;
+use Phalcon\Config\Adapter\Yaml;
 use Phalcon\Config\Exception;
-
 
 /**
  * Class ConfigLoader
  *
  * Default loader for Phalcon project inspired by the Yaml file loading system used in Symfony2.
  */
-class ConfigLoader extends ExtendedYaml {
+class ConfigLoader extends Yaml {
 
     /**
      * @var array
@@ -26,14 +25,14 @@ class ConfigLoader extends ExtendedYaml {
      */
     public function __construct($configDir, $appRoot, $env = 'prod') {
 
-        $parametersYaml = new ExtendedYaml($configDir . '/parameters.yml');
+        $parametersYaml = new Yaml($configDir . '/parameters.yml');
         $this->parameters = $parametersYaml->parameters;
 
         //Store app_root temporary in parameters
         $this->parameters['app_root'] = $appRoot;
 
         parent::__construct($configDir . '/config.yml', $this->subscribedCallbacks());
-        parent::merge(new ExtendedYaml($configDir . '/config_' . $env . '.yml', $this->subscribedCallbacks()));
+        parent::merge(new Yaml($configDir . '/config_' . $env . '.yml', $this->subscribedCallbacks()));
     }
 
     /**
